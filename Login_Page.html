@@ -1,0 +1,155 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Comic Sans MS;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: linear-gradient(midnightblue,#0175b5,#10c0f1, #17ffeb, midnightblue);
+}
+
+
+#main_container {
+  padding: 0px;
+  position: relative;
+  text-align: center;
+  color: ghostwhite;
+}
+
+#login_container {
+  padding: 0px;
+  position: relative;
+ 
+}
+
+#form{
+width: 600px;
+height: 400px;
+position: absolute;
+margin-top: 17%;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  
+}
+
+#Continue{
+cursor: pointer;
+font-weight: bolder;
+font-size: larger;
+font-family: Comic Sans MS;
+margin-top: 7%;
+text-align: center;
+}
+
+
+
+
+/* Banner text alignment */
+.Welcome {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  font-size: 30px;
+  font-weight: bolder;
+  text-shadow: 5px 5px midnightblue;
+}
+.App_Name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 65px;
+  font-weight: bolder;
+  text-shadow: 5px 5px midnightblue;
+}
+
+
+#login_img {
+  padding-top: 30px;
+}
+</style>
+</head>
+<body>
+<center>
+<div class="container" id="main_container">
+  <img id = "main_banner" src="math_banner.jpg" height="260px" width="1430px">
+  <div class="Welcome">WELCOME TO </div>
+  <div class="App_Name">MATH QUIZ APP </div>
+</div>
+
+<div class="container" id="login_container"></div>
+<img id="login_img" src="background_container.jpg" height="300px" width="700px">
+<div id="form">
+      <label id="uname_lbl1"><b>Username 1</b></label>
+      <input type="text" placeholder="Player 1 Username" name="uname1" required>
+
+      <label id="uname_lbl2"><b>Username 2</b></label>
+      <input type="text" placeholder="Player 2 Username " name="uname2" required>
+
+<!-- button animation on hover start-->
+      <style>
+        .button {
+          border-radius: 4px;
+          background-color:#0175b5;
+          border: none;
+          color: #FFFFFF;
+          text-align: center;
+          font-size: 40px;
+          padding: 8px;
+          width: 600px;
+          transition: all 0.5s;
+          cursor: pointer;
+          margin: 0px;
+          
+        }
+        
+        .button span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+        }
+        
+        .button span:after {
+          content: '\00bb';
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -20px;
+          transition: 0.5s;
+        }
+        
+        .button:hover span {
+          padding-right: 25px;
+        }
+        
+        .button:hover span:after {
+          opacity: 1;
+          right: 0;
+        }
+        </style>
+        
+        <a href="Game_Page.html">
+          <button class="button" type="submit"  id="Continue"><span>Continue </span></button>
+        </a>
+            
+
+    
+      </div>
+    </div>
+</center>
+</body>
+</html>
+

@@ -1,0 +1,148 @@
+<html>
+<head>
+	<title>Math Quiz App</title>
+</head>
+<body>
+
+	<script src="Game_Page.js"></script>
+<script async src="https://drv.tw/inc/wd.js"></script></body>
+<style>
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+body
+{
+	background-image: linear-gradient(midnightblue,#0175b5,#10c0f1, #17ffeb, midnightblue);
+    font-family: Comic Sans MS;
+}
+.App_Name {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 65px;
+  font-weight: bolder;
+  text-shadow: 5px 5px midnightblue;
+  color: ghostwhite;
+}
+
+
+#player_question{
+color: ghostwhite;
+font-weight: bolder;
+}
+#player_answer{
+color: ghostwhite;
+font-weight: bolder;
+}
+#output
+{
+background: ghostwhite;
+border-radius: 10px;
+border-top: 15px solid #0175b5;
+padding: 10px;
+float: none;
+text-align: left;
+width: 680px;
+height: 0px;
+}
+
+#Container_Numbers {
+  padding: 0px;
+  position: relative;
+ 
+}
+
+#my_div{
+width: 600px;
+height: 400px;
+position: absolute;
+margin-top: 17%;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+}
+
+/* button animation on hover start */
+      
+.button {
+          border-radius: 4px;
+          background-color:#0175b5;
+          border: none;
+          color: #FFFFFF;
+          text-align: center;
+          font-size: 20px!important;
+          padding: 8px;
+          width: 600px;
+          transition: all 0.5s;
+          cursor: pointer;
+          margin: 0px;
+		
+        }
+        
+        .button span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+        }
+        
+        .button span:after {
+          content: '\00bb';
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -20px;
+          transition: 0.5s;
+        }
+        
+        .button:hover span {
+          padding-right: 25px;
+        }
+        
+        .button:hover span:after {
+          opacity: 1;
+          right: 0;
+        }
+        
+           /* button animation on hover end */ 
+       
+</style>
+
+<center>
+<div class="container" id="Container_Banner">
+    <img id = "main_banner" src="math_banner.jpg" height="260px" width="1430px">
+	<div class="App_Name">MATH QUIZ APP </div>
+</div>
+
+<h3 id="player_question">Question Turn:</h3><h3 id="player_question2"></h3>
+<h3 id="player_answer">Answer Turn:</h3><h3 id="player_answer2"></h3>
+<div id="output" class="col-lg-6"> </div>
+<br>
+<br>
+
+<div class="container" id="Container_Numbers">
+<img src="background_container.jpg" height="300px" width="700px">
+        	<div id="my_div">
+				<label id="lbl_1"><b>Number 1</b></label>
+				<input type="text" id="number1" class="form-control" placeholder="Number 1" required>
+				<br>
+				<label id="lbl_2"><b>Number 2</b></label>
+				<input type="text" id="number2" class="form-control" placeholder="Number 2" required>
+				<br><br>
+					<button class="button" type="submit" id="Send"><span>Send </span></button>
+			</div>
+</div>
+</center>
+       
+	
+
+</html>
